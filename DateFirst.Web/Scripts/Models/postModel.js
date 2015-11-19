@@ -1,7 +1,7 @@
 ﻿var postModel = (function () {
 
     function sendNewPost(data) {
-            return jsonRequester.post('http://localhost:9941/api/Posts', {
+            return jsonRequester.post(constants.HOST + '/api/Posts', {
                 headers: { 'Authorization': modelHelpers.getBearerCode() },
                 data: JSON.stringify(data)
             })

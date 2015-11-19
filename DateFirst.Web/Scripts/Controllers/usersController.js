@@ -242,7 +242,7 @@
                 //});
                 var ajaxRequest = $.ajax({
                     type: "POST",
-                    url: "http://localhost:9941//api/FileUpload",
+                    url: constants.HOST + "//api/FileUpload",
                     contentType: false,
                     processData: false,
                     data: data,
@@ -271,7 +271,7 @@
                 //});
                 var ajaxRequest = $.ajax({
                     type: "POST",
-                    url: "http://localhost:9941//api/UploadProfilePicture",
+                    url: constants.HOST + "//api/UploadProfilePicture",
                     contentType: false,
                     processData: false,
                     data: data,

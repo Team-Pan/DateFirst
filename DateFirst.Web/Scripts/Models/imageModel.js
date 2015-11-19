@@ -1,7 +1,7 @@
 ﻿var imageModel = (function () {
 
     function uploadImage(data) {
-        return jsonRequester.post("http://localhost:9941//api/FileUpload", {
+        return jsonRequester.post(constants.HOST + "//api/FileUpload", {
             headers: { 'Authorization': modelHelpers.getBearerCode() },
             data: data,
             contentType: false,
@@ -13,7 +13,7 @@
     }
 
     function uploadAvatar(data) {
-        return jsonRequester.post("http://localhost:9941//api/UploadProfilePicture", {
+        return jsonRequester.post(constants.HOST + "//api/UploadProfilePicture", {
             data: data,
             headers: { 'Authorization': modelHelpers.getBearerCode() },
             contentType: false,

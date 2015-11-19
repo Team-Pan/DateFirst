@@ -10,7 +10,7 @@
             LastName: user.lastName
         };
 
-        return jsonRequester.post('http://localhost:9941/api/Account/Register', {
+        return jsonRequester.post(constants.HOST + '/api/Account/Register', {
             data: JSON.stringify(reqUser)
         })
           .then(function (resp) {
@@ -23,7 +23,7 @@
 
         var userInfo = 'grant_type=password&username=' + user.username + '&password=' + user.password;
 
-        return jsonRequester.post('http://localhost:9941/Token', {
+        return jsonRequester.post(constants.HOST + '/Token', {
             data: userInfo,
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             contentType: 'application/x-www-form-urlencoded'
@@ -49,14 +49,14 @@
     }
 
     function getUser(id) {
-        return jsonRequester.get('http://localhost:9941/api/UserProfiles/' + id)
+        return jsonRequester.get(constants.HOST + '/api/UserProfiles/' + id)
         .then(function (res) {
             return res;
         })
     }
 
     function getUserInfo(id) {
-        return jsonRequester.get('http://localhost:9941/api/UserProfiles/' + id)
+        return jsonRequester.get(constants.HOST + '/api/UserProfiles/' + id)
         .then(function (res) {
             if (res.AdditionalInfo !== null) {
                 res.AdditionalInfo.Gender = enumerations.genderType[res.AdditionalInfo.Gender];
@@ -70,28 +70,28 @@
     }
 
     function getAllUsers() {
-        return jsonRequester.get('http://localhost:9941/api/UserProfiles')
+        return jsonRequester.get(constants.HOST + '/api/UserProfiles')
         .then(function (res) {
             return res;
         });
     }
 
     function getAllMaleUsers() {
-        return jsonRequester.get('http://localhost:9941/api/MaleUserProfiles')
+        return jsonRequester.get(constants.HOST + '/api/MaleUserProfiles')
         .then(function (res) {
             return res;
         });
     }
 
     function getAllFemaleUsers() {
-        return jsonRequester.get('http://localhost:9941/api/FemaleUserProfiles')
+        return jsonRequester.get(constants.HOST + '/api/FemaleUserProfiles')
         .then(function (res) {
             return res;
         });
     }
 
     function getLoggedUserId() {
-        return jsonRequester.get('http://localhost:9941/api/Account/LoggedUser', {
+        return jsonRequester.get(constants.HOST + '/api/Account/LoggedUser', {
             headers: { 'Authorization': modelHelpers.getBearerCode() }
         })
             .then(function (res) {
@@ -100,7 +100,7 @@
     }
 
     function getLoggedUserName() {
-        return jsonRequester.get('http://localhost:9941/api/Account/UserName', {
+        return jsonRequester.get(constants.HOST + '/api/Account/UserName', {
             headers: { 'Authorization': modelHelpers.getBearerCode() }
         })
             .then(function (res) {
@@ -112,7 +112,7 @@
 
         data = JSON.stringify(data);
 
-        return jsonRequester.put('http://localhost:9941/api/Account/UpdateUserInfo', {
+        return jsonRequester.put(constants.HOST + '/api/Account/UpdateUserInfo', {
             headers: { 'Authorization': modelHelpers.getBearerCode() },
             data: data
         })
@@ -122,7 +122,7 @@
     }
 
     function getSearchedUsers(data) {
-        return jsonRequester.get('http://localhost:9941/api/UserProfiles/Search', {
+        return jsonRequester.get(constants.HOST + '/api/UserProfiles/Search', {
             data: data
         })
         .then(function (res) {

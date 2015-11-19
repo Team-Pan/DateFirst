@@ -9,7 +9,7 @@
                         $('#profile-picture').attr("src", loggedUserInfo.AvatarUrl);
                     });
             });
-        return jsonRequester.get('http://localhost:9941/api/HomePageInfo')
+        return jsonRequester.get(constants.HOST + 'api/HomePageInfo')
         .then(function (res) {
             return res;
         });
