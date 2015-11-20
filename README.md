@@ -22,5 +22,11 @@ When some flirts with you, a notification pops up to both the flirter and the fl
 
 To register you need to provide FirstName, LastName, Email and Password. A default avatar is assigned to each new user. By accessing my profile all additionall information as well as gallery uploads is right at you fingertips.
 
+## Class Diagram Data
+<a href="http://tinypic.com?ref=2u961y0" target="_blank"><img src="http://i67.tinypic.com/2u961y0.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+
+## Api Class diagram
+<a href="http://tinypic.com?ref=1zfijvp" target="_blank"><img src="http://i64.tinypic.com/1zfijvp.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+
 This project idea was developed and delivered by *Team Pan* - Telerik Academy 2015-2016.
 <a href="http://tinypic.com?ref=2cynpe9" target="_blank"><img src="http://i64.tinypic.com/2cynpe9.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
