@@ -1,9 +1,7 @@
-# DateFirst
-Academy Dating Application
-=====================================================================
+## DateFirst
+### Academy Dating Application
 
-Web Services and Cloud Technologies � Practical Teamwork Project 2015
-=====================================================================
+###### Web Services and Cloud Technologies - Practical Teamwork Project 2015
 
 Project Description
 -------------------
