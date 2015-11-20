@@ -1,4 +1,15 @@
-﻿body {
+﻿/*colour theme for panels*/
+#search-container .panel .panel-heading,
+#users-container .panel .panel-heading,
+#shout-box .panel .portlet-heading,
+.login_modal_header, .login_modal_footer {
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 96%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 96%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 96%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+body {
     color: #888888;
     font-family: 'Open Sans',Arial,sans-serif;
     font-size: 16px;
@@ -24,8 +35,8 @@ a:hover {
 
 #navbar {
     height: 180px;
-    border-bottom: 1px solid #8AB933;
-    background-image: url('../../Images/banner.png');
+    border-bottom: 1px solid #F5F5F5;
+    background-image: url('../../Images/bannerr.png');
     background-repeat: no-repeat;
 }
 
@@ -51,7 +62,7 @@ a:hover {
     outline: none;
 }
 
-    #register-btn:hover, #login-btn:hover, #signout-cloud-btn::after hover {
+    #register-btn:hover, #login-btn:hover, #signout-cloud-btn:hover {
         background-image: url('../../Images/login-register-hover.png');
     }
 
@@ -70,9 +81,9 @@ a:hover {
     font-size: 13px;
 }
 
-#edit-profile{
-   margin-bottom:10px;
-   margin-left:-223px;
+#edit-profile {
+    margin-bottom: 10px;
+    margin-left: -223px;
 }
 
 
@@ -86,7 +97,7 @@ a:hover {
         border-radius: 0px;
         margin-bottom: 0px;
         padding: 0px;
-        border-color: #8AB933;
+        border-color: #F5F5F5;
         width: 95%;
         height: 50%;
     }
@@ -94,7 +105,6 @@ a:hover {
         #search-container .panel .panel-heading {
             border-radius: 0px;
             color: white;
-            background-color: #8AB933;
         }
 
         #search-container .panel .panel-body div {
@@ -136,21 +146,20 @@ a:hover {
         margin-bottom: 0px;
         border-radius: 0px;
         padding: 0px;
-        border-color: #8AB933;
+        border-color: #F5F5F5;
         width: 100%;
     }
 
         #users-container .panel a {
             font-size: 14px;
-            color: #8AB933;
             float: right;
+            color: cornflowerblue;
             margin-right: 10px;
         }
 
         #users-container .panel .panel-heading {
             border-radius: 0px;
             color: white;
-            background-color: #8AB933;
         }
 
         #users-container .panel ul {
@@ -161,15 +170,21 @@ a:hover {
             #users-container .panel ul li {
                 list-style-type: none;
                 display: inline-block;
-                color: #8AB933;
+                color: cornflowerblue;
                 width: 19%;
                 vertical-align: top;
                 margin-top: 5px;
             }
 
                 #users-container .panel ul li a {
-                    color: #8AB933;
+                    color: cornflowerblue;
                 }
+
+#pan {
+    display: block;
+    padding-top: 40px;
+    text-align: center;
+}
 
 #shout-box {
     padding: 0px;
@@ -180,7 +195,7 @@ a:hover {
     #shout-box .panel {
         margin: 0px;
         padding: 0px;
-        border: 1px solid #8AB933;
+        border: 1px solid #F5F5F5;
         border-radius: 0px;
         width: 95%;
     }
@@ -191,7 +206,6 @@ a:hover {
         }
 
         #shout-box .panel .portlet-heading {
-            background: #8AB933;
             padding: 5px 15px;
             line-height: 1.1;
         }
@@ -243,9 +257,13 @@ a:hover {
 
                     #shout-box .panel .portlet #chat .portlet-footer #ta-shoutbox-message:focus {
                         outline: none !important;
-                        border: 1px solid #8AB933;
-                        box-shadow: 0 0 10px #8AB933;
+                        border: 1px solid cornflowerblue;
+                        box-shadow: 0 0 10px cornflowerblue;
                     }
+
+.center-info {
+    text-align: center;
+}
 
 .well {
     height: 360px;
@@ -296,8 +314,8 @@ a:hover {
 
             .well .tab-content .tab-pane #ta-about-me-content:focus {
                 outline: none !important;
-                border: 1px solid #8AB933;
-                box-shadow: 0 0 10px #8AB933;
+                border: 1px solid cornflowerblue;
+                box-shadow: 0 0 10px cornflowerblue;
             }
 
         .well .tab-content .tab-pane #btn-save-changes {
@@ -388,8 +406,8 @@ a:hover {
 
                         .well .tab-content #comments .portlet .portlet-footer .form-group #ta-comment-message:focus {
                             outline: none !important;
-                            border: 1px solid #8AB933;
-                            box-shadow: 0 0 10px #8AB933;
+                            border: 1px solid cornflowerblue;
+                            box-shadow: 0 0 10px cornflowerblue;
                         }
 
                     .well .tab-content #comments .portlet .portlet-footer .form-group #btn-send-comment {
@@ -404,7 +422,7 @@ a:hover {
 }
 
     .btn-user-profile:hover {
-        border-top: 2px solid #8AB933;
+        border-top: 2px solid cornflowerblue;
     }
 
 .card-background #flirts {
@@ -415,7 +433,7 @@ a:hover {
 .btn-pressed {
     background: white;
     border: 1px solid lightgray;
-    border-top: 2px solid #8AB933;
+    border-top: 2px solid cornflowerblue;
 }
 
 .panel-body {
@@ -446,9 +464,11 @@ a:hover {
 
 /*Sorted Users Page*/
 #sorted-users {
-    background: white;
+    background-color:white;
     height: 600px;
     overflow-y: auto;
+    border:1px solid cornflowerblue;
+    border-radius:1%;
 }
 
 #best-female-daters-container, #newest-daters-container, #shout-box {
@@ -533,14 +553,14 @@ body #wrapper {
 }
 
 .login_modal_header, .login_modal_footer {
-    background: #8AB933 !important;
+    /*background: cornflowerblue !important;*/
     color: #fff;
 }
 
 .login-modal input {
     height: 40px;
     box-shadow: none;
-    border: 1px solid #8AB933;
+    border: 1px solid cornflowerblue;
 }
 
 .login-link {
@@ -569,7 +589,7 @@ body #wrapper {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
-    border: 2px solid #8AB933;
+    border: 2px solid cornflowerblue;
     background: white;
     color: #808080;
     font-size: 18px;
@@ -619,7 +639,7 @@ body #wrapper {
 .triangle-border {
     position: relative;
     padding: 10px;
-    border: 5px solid #8AB933;
+    border: 4px solid cornflowerblue;
     color: #333;
     background: #fff;
     -webkit-border-radius: 10px;
@@ -636,7 +656,7 @@ body #wrapper {
             bottom: auto;
             left: -30px;
             border-width: 15px 30px 15px 0;
-            border-color: transparent #8AB933;
+            border-color: transparent cornflowerblue;
         }
 
     .triangle-border:before {
@@ -646,7 +666,7 @@ body #wrapper {
         left: 40px;
         border-width: 20px 20px 0;
         border-style: solid;
-        border-color: #8AB933 transparent;
+        border-color: cornflowerblue transparent;
         display: block;
         width: 0;
     }

@@ -93,6 +93,7 @@
     <Content Include="Content\toastr.min.css" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\banner.png" />
+    <Content Include="Images\bannerr.png" />
     <Content Include="Images\cloud button hover.png" />
     <Content Include="Images\cloud button profile.png" />
     <Content Include="Images\cloud button.png" />
@@ -101,6 +102,7 @@
     <Content Include="Images\login-btn.png" />
     <Content Include="Images\login-register-hover.png" />
     <Content Include="Images\logout-btn.png" />
+    <Content Include="Images\panB.png" />
     <Content Include="Images\register-btn.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\App\app.js" />
@@ -144,6 +146,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\datefirst1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
